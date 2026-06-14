@@ -19,7 +19,7 @@ import OutlinedButton from "../common/OutlinedButton";
 
 const slides = [
   {
-    title: "Jute Products",
+    title: "Bag Products",
     description:
       "This is a glassmorphism card with some content and a button below. Looks modern and clean!",
     image: hero,
@@ -30,12 +30,12 @@ const slides = [
       "This is a glassmorphism card with some content and a button below. Looks modern and clean!",
     image: hero,
   },
-  {
-    title: "Eco Bags",
-    description:
-      "Another amazing product card description here for your slides!",
-    image: hero,
-  },
+  // {
+  //   title: "Eco Bags",
+  //   description:
+  //     "Another amazing product card description here for your slides!",
+  //   image: hero,
+  // },
 ];
 
 const Hero = () => {

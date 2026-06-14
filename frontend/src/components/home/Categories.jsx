@@ -7,7 +7,7 @@ const Categories = () => {
   const categoriesData = [
     {
       id: 1,
-      title: "Jute Bags",
+      title: "Bags",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit necessitatibus magni accusamus repellat.",
       image: CategoryImage,

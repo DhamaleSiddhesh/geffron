@@ -24,50 +24,50 @@ const products = [
   {
     id: 1,
     image: juteProduct,
-    name: "Jute Bag Large",
+    name: "Bag Large",
     desicription:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Jute",
+    category: "Bags",
   },
   {
     id: 2,
     image: juteProduct,
-    name: "Jute Bag Small",
+    name: "Bag Small",
     desicription:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Jute",
+    category: "Bags",
   },
   {
     id: 3,
     image: juteProduct,
-    name: "Jute Bag Large",
+    name: "Bag Large",
     desicription:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Jute",
+    category: "Bags",
   },
   {
     id: 4,
     image: juteProduct,
-    name: "Jute Bag Small",
+    name: "Bag Small",
     desicription:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Jute",
+    category: "Bags",
   },
   {
     id: 5,
     image: juteProduct,
-    name: "Jute Bag Large",
+    name: "Bag Large",
     desicription:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Jute",
+    category: "Bags",
   },
   {
     id: 6,
     image: juteProduct,
-    name: "Jute Bag Small",
+    name: "Bag Small",
     desicription:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Jute",
+    category: "Bags",
   },
   {
     id: 7,
@@ -111,7 +111,7 @@ const products = [
 // });
 
 const TopProducts = () => {
-  const [activeTab, setActiveTab] = useState("Jute");
+  const [activeTab, setActiveTab] = useState("Bags");
   const categories = [...new Set(products.map((p) => p.category))];
 
   const filteredProducts = products.filter(
@@ -149,7 +149,7 @@ const TopProducts = () => {
             1024: { slidesPerView: 3, spaceBetween: 20 },
             1280: { slidesPerView: 4, spaceBetween: 20 },
           }}
-            className="topProductSlider"
+          className="topProductSlider"
         >
           {filteredProducts.map((product) => (
             <SwiperSlide
@@ -171,7 +171,6 @@ const TopProducts = () => {
                   </p>
 
                   <AnimatedButton title="Explore" />
-
                 </div>
               </div>
             </SwiperSlide>

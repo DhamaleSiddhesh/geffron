@@ -5,6 +5,7 @@ import Categories from "../components/home/Categories";
 import WhyChooseGeffron from "../components/home/WhyChooseGeffron";
 import TopProducts from "../components/home/TopProducts";
 import InquirySection from "../components/common/InquirySection ";
+import Standards from "../components/common/Standards";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
         <TopProducts />
       </div>
       <InquirySection />
+      <Standards />
     </div>
   );
 };
