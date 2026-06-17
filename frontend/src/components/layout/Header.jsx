@@ -1,8 +1,18 @@
-import React from "react";
-import logo from "../../assets/images/logos/geffron-logo.jpg.jpeg";
+import React, { useState, useEffect } from "react";
+import logo from "../../assets/images/logos/geffron-logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const navItems = [
     {
       name: "HOME",
@@ -10,30 +20,37 @@ const Header = () => {
     },
     {
       name: "ABOUT US",
-      path: "/",
+      path: "/about",
     },
     {
       name: "PRODUCTS",
-      path: "/",
+      path: "/products",
     },
     {
       name: "CONTACT",
-      path: "/",
+      path: "/contact",
     },
   ];
+
   return (
-    <header className="bg-transparent flex justify-around items-center py-5">
+    <header
+      className={`sticky top-0 z-50 flex justify-around items-center py-5 transition-all duration-300 ${
+        isSticky ? "bg-[#e7e7e9] shadow-md" : "bg-transparent"
+      }`}
+    >
       {/* Logo */}
-      <div className="">
-        <img className="h-25 w-25" src={logo} alt="geffron logo" />
-      </div>
+      <Link to={"/"}>
+        <div className="">
+          <img className="h-15 w-auto" src={logo} alt="geffron logo" />
+        </div>
+      </Link>
       {/* nav */}
       <nav>
         <ul className="flex gap-15">
           {navItems.map((nav, i) => (
             <Link key={i} to={nav.path}>
+              {console.log(nav.name)}
               <li className="relative overflow-hidden h-6 cursor-pointer group">
-                
                 {/* Default text (slides up) */}
                 <span className="block transition-transform duration-300 ease-in-out group-hover:-translate-y-full">
                   {nav.name}

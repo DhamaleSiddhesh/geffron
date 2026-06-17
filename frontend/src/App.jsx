@@ -2,6 +2,10 @@ import React from "react";
 import Layout from "./components/layout/Layout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Products from "./pages/Products";
+import ContactUs from "./pages/ContactUs";
+import ProductDetail from "./pages/SingleProduct";
 
 const App = () => {
   return (
@@ -11,7 +15,10 @@ const App = () => {
           <div className="min-h-screen ">
             <Routes>
               <Route path="/" element={<Home />} />
-              {/* <Route path="/About" element={<About />} /> */}
+              <Route path="/about" element={<About />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/contact" element={<ContactUs />} />
+              <Route path="/product" element={<ProductDetail />} />
             </Routes>
           </div>
         </Layout>

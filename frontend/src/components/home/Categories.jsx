@@ -48,7 +48,7 @@ const Categories = () => {
 
             <p className="py-10">{category.description}</p>
 
-            <OutlinedButton title="Explore" />
+            <OutlinedButton title="Explore" link={"/products"}/>
           </div>
         </div>
       ))}

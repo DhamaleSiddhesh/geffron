@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@layer components {
+  .brand-text {
+    @apply font-semibold uppercase text-[#7C2420];
+  }
+  .brand-color{
+    @apply text-[#7C2420]
+  }
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -31,7 +40,6 @@ body {
   height: 16px;
 }
 
-
 .swiper-wrapper {
   overflow: visible !important;
 }
@@ -39,6 +47,6 @@ body {
 .swiper-slide {
   overflow: visible !important;
 }
-.topProductSlider .swiper-wrapper{
+.topProductSlider .swiper-wrapper {
   justify-content: center;
 }

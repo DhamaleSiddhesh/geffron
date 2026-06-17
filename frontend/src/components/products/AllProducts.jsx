@@ -1,24 +1,8 @@
 import React, { useState } from "react";
-import SectionHeading from "../common/SectionHeading";
-import OutlinedButton from "../common/OutlinedButton";
 import TabButton from "../common/TabButton";
+import ProductCard from "../common/ProductCard";
 import juteProduct from "../../assets/images/product/jute-product.webp";
 import agarbattiProduct from "../../assets/images/product/agarbatti-product.webp";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/effect-fade";
-
-import {
-  Navigation,
-  Pagination,
-  Autoplay,
-  Keyboard,
-  EffectFade,
-  FreeMode,
-} from "swiper/modules";
-import ProductCard from "../common/ProductCard";
 
 const products = [
   {
@@ -87,18 +71,20 @@ const products = [
   },
 ];
 
-const TopProducts = () => {
-  const [activeTab, setActiveTab] = useState("Bags");
-    const categories = [...new Set(products.map((p) => p.category))];
+const AllProducts = () => {
+  const [activeTab, setActiveTab] = useState("ALL");
 
-  const filteredProducts = products.filter(
-    (product) => product.category === activeTab,
-  );
+  const categories = ["ALL", ...new Set(products.map((p) => p.category))];
+
+  const filteredProducts =
+    activeTab === "ALL"
+      ? products
+      : products.filter((p) => p.category === activeTab);
 
   return (
-    <>
-      <SectionHeading title={"Our Top Products"} />
-      <div className="flex justify-center gap-5 py-10">
+    <section className="py-10">
+      {/* Tabs */}
+      <div className="flex justify-center gap-6 mb-10 flex-wrap">
         {categories.map((category) => (
           <TabButton
             key={category}
@@ -109,34 +95,14 @@ const TopProducts = () => {
         ))}
       </div>
 
-      {/* Products */}
-      <div className="mx-auto max-w-7xl px-4">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay, Keyboard]}
-          slidesPerView={4}
-          spaceBetween={20}
-          loop={false}
-          navigation={true}
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
-          keyboard={{ enabled: true }}
-          breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 10 },
-            640: { slidesPerView: 2, spaceBetween: 15 },
-            1024: { slidesPerView: 3, spaceBetween: 20 },
-            1280: { slidesPerView: 4, spaceBetween: 20 },
-          }}
-          className="topProductSlider"
-        >
-          {filteredProducts.map((product) => (
-            <SwiperSlide key={product.id}>
-              <ProductCard product={product} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      {/* Products Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-6 max-w-6xl mx-auto">
+        {filteredProducts.map((prod) => (
+          <ProductCard key={prod.id} product={prod} />
+        ))}
       </div>
-    </>
+    </section>
   );
 };
 
-export default TopProducts;
+export default AllProducts;

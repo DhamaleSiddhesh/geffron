@@ -6,12 +6,13 @@ const InquirySection = () => {
       <div className="max-w-screen-xl mx-auto px-6 flex flex-col lg:flex-row gap-10 items-center">
         {/* LEFT CONTENT */}
         <div className="lg:w-1/2">
-          <h2 className="text-4xl md:text-8xl font-[250] text-black leading-tight uppercase">
-            Send Your Inquiry
+          <h2 className="text-2xl md:text-5xl font-bold text-black leading-relaxed uppercase tracking-wide">
+            Start your journey with <span className="brand-text">Geffron</span>{" "}
+            today.
           </h2>
 
           <p className="text-black/70 mt-4 text-lg md:text-xl">
-            Get product details, pricing & bulk quotes instantly
+            Let’s build something amazing together.
           </p>
         </div>
 

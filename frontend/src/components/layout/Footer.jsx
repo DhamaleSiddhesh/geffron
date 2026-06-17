@@ -29,9 +29,6 @@ const Footer = () => {
           <ul className="space-y-2 text-white ">
             <li className="hover:text-green-600 cursor-pointer">Bags</li>
             <li className="hover:text-green-600 cursor-pointer">Agarbatti</li>
-            <li className="hover:text-green-600 cursor-pointer">
-              Eco Products
-            </li>
           </ul>
         </div>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/home/Hero";
+import SliderHero from "../components/home/SliderHero";
 import AboutSection from "../components/home/AboutSection";
 import Categories from "../components/home/Categories";
 import WhyChooseGeffron from "../components/home/WhyChooseGeffron";
@@ -10,7 +10,7 @@ import Standards from "../components/common/Standards";
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <SliderHero />
       <div className="py-15">
         <AboutSection />
       </div>
