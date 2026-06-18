@@ -3,7 +3,7 @@ import AnimatedButton from "./AnimatedButton";
 
 const ProductCard = ({product}) => {
   return (
-    <div className="rounded-xl overflow-hidden  hover:shadow-lg transition bg-white">
+    <div className="bg-white rounded-xl overflow-hidden  hover:shadow-lg transitio">
       <img
         className="w-full h-auto object-cover"
         src={product.image}
