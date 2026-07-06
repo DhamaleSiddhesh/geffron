@@ -21,7 +21,7 @@ const Home = () => {
         <WhyChooseGeffron />
       </div>
       <div className="py-15">
-        <TopProducts />
+        <TopProducts title={"Best seller products"}/>
       </div>
       <InquirySection />
       <Standards />

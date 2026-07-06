@@ -87,7 +87,7 @@ const products = [
   },
 ];
 
-const TopProducts = () => {
+const TopProducts = ({title='Our Top Products'}) => {
   const [activeTab, setActiveTab] = useState("Bags");
     const categories = [...new Set(products.map((p) => p.category))];
 
@@ -97,7 +97,7 @@ const TopProducts = () => {
 
   return (
     <>
-      <SectionHeading title={"Our Top Products"} />
+      <SectionHeading title={title} />
       <div className="flex justify-center gap-5 py-10">
         {categories.map((category) => (
           <TabButton

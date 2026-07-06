@@ -22,7 +22,7 @@ const About = () => {
       {/* </div> */}
       <VisionMission />
       <Values />
-      <WhyChooseGeffron />
+      {/* <WhyChooseGeffron /> */}
       <div className="pt-15">
         <TopProducts />
       </div>

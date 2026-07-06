@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeading from "../common/SectionHeading";
-// import { CheckCircleIcon } from "@heroicons/react/24/solid"; // Optional, for icons
+import { TbArrowBadgeDown } from "react-icons/tb";
+import why_choose_us from "../../assets/images/home/why_choose_us.webp";
 
 const features = [
   {
@@ -31,24 +32,33 @@ const WhyChooseGeffron = () => {
       <div className=" text-center">
         <SectionHeading title="Why Choose Geffron" />
         {/* <section className="py-16 bg-gray-50"> */}
-          <div className="max-w-screen-xl mx-auto px-6">
-
-            {/* Grid */}
-            <div className="flex flex-wrap justify-center gap-6 pt-15">
+        <div className="max-w-screen-xl mx-auto px-6">
+          {/* Grid */}
+          <div className="flex flex-wrap justify-center items-center gap-20 pt-15">
+            <div>
+              <img
+                src={why_choose_us}
+                alt="why choose us image"
+                className="h-120 w-auto"
+              />
+            </div>
+            <div>
               {features.map((item, index) => (
-                <div
-                  key={index}
-                  className="p-8 bg-white/40 rounded-xl shadow hover:shadow-xl hover:scale-105 duration-300 ease-in-out transition border"
-                >
-                  <h3 className="text-2xl font-semibold text-gray-800">
-                    {item.title}
-                  </h3>
+                <div className="flex items-start py-5 gap-4">
+                  <TbArrowBadgeDown size={50}/>
 
-                  <p className="text-gray-600 mt-2">{item.desc}</p>
+                  <div key={index} className="text-start ">
+                    <h3 className="text-2xl font-medium tracking-widest ">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-gray-600">{item.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
+        </div>
         {/* </section> */}
       </div>
     </section>

@@ -3,9 +3,9 @@ import React from "react";
 const VisionMission = () => {
   return (
     <section className="py-5 px-6">
-      <div className="flex flex-col xl:gap-0 gap-10 xl:flex-row justify-center items-stretch mx-auto">
+      <div className="flex gap-10 flex-col xl:flex-row justify-around md:w-300 mx-auto">
         {/* Vision */}
-        <div className="border-2 border-[#7C2420] rounded-2xl md:rounded-tr-full md:rounded-bl-full p-8 md:p-10 overflow-hidden flex-1">
+        <div className="border-2 border-[#7C2420] rounded-2xl  p-8 md:p-10 overflow-hidden flex-1">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-widest uppercase text-[#7C2420] text-center">
             Our Vision
           </h2>
@@ -19,7 +19,7 @@ const VisionMission = () => {
         </div>
 
         {/* Mission */}
-        <div className="border-2 border-[#7C2420] rounded-2xl md:rounded-tr-full md:rounded-bl-full p-8 md:p-10 overflow-hidden flex-1">
+        <div className="border-2 border-[#7C2420] rounded-2xl p-8 md:p-10 overflow-hidden flex-1">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-widest uppercase text-[#7C2420] text-center">
             Our Mission
           </h2>
