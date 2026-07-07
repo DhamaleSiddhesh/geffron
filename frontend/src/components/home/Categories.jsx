@@ -7,14 +7,14 @@ const Categories = () => {
   const categoriesData = [
     {
       id: 1,
-      title: "Bags",
+      title: "Agarbatti",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit necessitatibus magni accusamus repellat.",
       image: CategoryImage,
     },
     {
       id: 2,
-      title: "Agarbatti",
+      title: "Bags",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit necessitatibus magni accusamus repellat.",
       image: CategoryImage,
@@ -48,7 +48,7 @@ const Categories = () => {
 
             <p className="py-10">{category.description}</p>
 
-            <OutlinedButton title="Explore" link={"/products"}/>
+            <OutlinedButton title="Explore" link={"/products"} />
           </div>
         </div>
       ))}

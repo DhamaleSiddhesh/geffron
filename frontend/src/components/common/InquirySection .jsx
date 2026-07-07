@@ -46,6 +46,18 @@ const InquirySection = () => {
               placeholder="City"
               className="border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-green-400"
             />
+
+            <select
+              className="border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-green-400"
+              defaultValue=""
+              required
+            >
+              <option value="" disabled>
+                Select Category
+              </option>
+              <option value="Agarbatti">Agarbatti</option>
+              <option value="Bags">Bags</option>
+            </select>
           </div>
 
           {/* MESSAGE (FULL WIDTH) */}

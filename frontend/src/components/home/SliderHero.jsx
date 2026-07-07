@@ -18,13 +18,13 @@ import OutlinedButton from "../common/OutlinedButton";
 
 const slides = [
   {
-    title: "Bag Products",
+    title: "Agarbatti Products",
     description:
       "This is a glassmorphism card with some content and a button below. Looks modern and clean!",
     image: hero,
   },
   {
-    title: "Agarbatti Products",
+    title: "Bag Products",
     description:
       "This is a glassmorphism card with some content and a button below. Looks modern and clean!",
     image: hero,

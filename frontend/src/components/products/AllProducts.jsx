@@ -74,7 +74,7 @@ const products = [
 const AllProducts = () => {
   const [activeTab, setActiveTab] = useState("ALL");
 
-  const categories = ["ALL", ...new Set(products.map((p) => p.category))];
+  const categories = ["ALL","Agarbatti","Bags"];
 
   const filteredProducts =
     activeTab === "ALL"

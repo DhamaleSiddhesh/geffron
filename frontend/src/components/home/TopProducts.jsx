@@ -87,9 +87,10 @@ const products = [
   },
 ];
 
-const TopProducts = ({title='Our Top Products'}) => {
-  const [activeTab, setActiveTab] = useState("Bags");
-    const categories = [...new Set(products.map((p) => p.category))];
+
+const TopProducts = ({ title = "Our Top Products" }) => {
+  const [activeTab, setActiveTab] = useState("Agarbatti");
+const categories = ["Agarbatti", "Bags"];
 
   const filteredProducts = products.filter(
     (product) => product.category === activeTab,
