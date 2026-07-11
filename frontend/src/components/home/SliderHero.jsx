@@ -14,8 +14,8 @@ import {
 } from "swiper/modules";
 
 import hero from "../../assets/images/hero/home-hero.webp";
-import bagImage from "../../assets/images/hero/bag.jpeg"
-import agarbattiImage from "../../assets/images/hero/agarbatti.jpeg"
+import bagImage from "../../assets/images/hero/bag.jpeg";
+import agarbattiImage from "../../assets/images/hero/agarbatti.jpeg";
 import OutlinedButton from "../common/OutlinedButton";
 
 const slides = [
@@ -73,7 +73,7 @@ const SliderHero = () => {
                   {slide.description}
                 </p>
 
-                <OutlinedButton title="Explore" link={"/product"} />
+                <OutlinedButton title="Explore" link={"/products"} />
               </div>
             </div>
           </SwiperSlide>
