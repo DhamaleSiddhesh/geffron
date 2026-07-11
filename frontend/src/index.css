@@ -2,10 +2,10 @@
 
 @layer components {
   .brand-text {
-    @apply font-semibold uppercase text-[#7C2420];
+    @apply font-semibold uppercase text-[#7C241F];
   }
   .brand-color{
-    @apply text-[#7C2420]
+    @apply text-[#7C241F]
   }
 }
 

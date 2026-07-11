@@ -19,6 +19,10 @@ export const categories = [
 ];
 
 export const products = [
+  // ===========================
+  // BAGS
+  // ===========================
+
   {
     id: "prod_1",
     name: "Premium Jute Bag Large",
@@ -38,12 +42,13 @@ export const products = [
     status: "active",
 
     isTopProduct: true,
+    isBestSellerProduct: true,
 
-    mainImage: "/images/products/jute/main.jpg",
+    mainImage: "/src/assets/images/product/jute-product.webp",
     images: [
-      "/images/products/jute/1.jpg",
-      "/images/products/jute/2.jpg",
-      "/images/products/jute/3.jpg",
+      "/src/assets/images/product/jute-product.webp",
+      "/src/assets/images/product/jute-product.webp",
+      "/src/assets/images/product/jute-product.webp",
     ],
 
     createdAt: "2026-01-01",
@@ -69,40 +74,235 @@ export const products = [
     status: "active",
 
     isTopProduct: false,
+    isBestSellerProduct: false,
 
-    mainImage: "/images/products/warli/main.jpg",
-    images: ["/images/products/warli/1.jpg", "/images/products/warli/2.jpg"],
+    mainImage: "/src/assets/images/product/jute-product.webp",
+    images: ["/src/assets/images/product/jute-product.webp", "/src/assets/images/product/jute-product.webp"],
+
+    createdAt: "2026-01-01",
+    updatedAt: "2026-01-01",
+  },
+
+  // ===========================
+  // AGARBATTI
+  // ===========================
+
+  {
+    id: "prod_3",
+    name: "Mogara Essence Agarbatti",
+    slug: "mogara-essence-agarbatti",
+
+    description:
+      "Premium Mogara fragrance incense sticks with a soothing floral aroma.",
+
+    brand: "Geffron",
+    categoryId: "cat_1",
+
+    productType: "Incense Stick",
+
+    material: "Natural Herbs",
+    modelCode: "AG-101",
+
+    status: "active",
+
+    isTopProduct: true,
+    isBestSellerProduct: true,
+
+    mainImage: "/src/assets/images/product/mogara-essence.png",
+    images: ["/src/assets/images/product/mogara-essence.png"],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
   },
 
   {
-    id: "prod_3",
-    name: "Lavender Agarbatti",
-    slug: "lavender-agarbatti",
+    id: "prod_4",
+    name: "Namo Namah Agarbatti",
+    slug: "namo-namah-agarbatti",
 
-    description:
-      "Premium incense sticks with long-lasting soothing lavender fragrance.",
+    description: "Divine fragrance crafted for daily prayers and meditation.",
 
     brand: "Geffron",
     categoryId: "cat_1",
 
-    productType: "Lavender Stick",
+    productType: "Incense Stick",
 
-    material: "Natural herbs",
-    modelCode: "AG-101",
+    material: "Natural Herbs",
+    modelCode: "AG-102",
 
     status: "active",
 
     isTopProduct: true,
+    isBestSellerProduct: false,
 
-    mainImage: "/images/products/lavender/main.jpg",
-    images: [
-      "/images/products/lavender/1.jpg",
-      "/images/products/lavender/2.jpg",
-      "/images/products/lavender/3.jpg",
-    ],
+    mainImage: "/src/assets/images/product/namo-namah.png",
+    images: ["/src/assets/images/product/namo-namah.png"],
+
+    createdAt: "2026-01-01",
+    updatedAt: "2026-01-01",
+  },
+
+  {
+    id: "prod_5",
+    name: "Oudh Swarna Agarbatti",
+    slug: "oudh-swarna-agarbatti",
+
+    description: "Rich oudh fragrance with a luxurious and long-lasting aroma.",
+
+    brand: "Geffron",
+    categoryId: "cat_1",
+
+    productType: "Incense Stick",
+
+    material: "Natural Herbs",
+    modelCode: "AG-103",
+
+    status: "active",
+
+    isTopProduct: false,
+    isBestSellerProduct: true,
+
+    mainImage: "/src/assets/images/product/oudh-swarna.png",
+    images: ["/src/assets/images/product/oudh-swarna.png"],
+
+    createdAt: "2026-01-01",
+    updatedAt: "2026-01-01",
+  },
+
+  {
+    id: "prod_6",
+    name: "Wala Serenity Agarbatti",
+    slug: "wala-serenity-agarbatti",
+
+    description:
+      "Refreshing herbal fragrance that creates a peaceful ambience.",
+
+    brand: "Geffron",
+    categoryId: "cat_1",
+
+    productType: "Incense Stick",
+
+    material: "Natural Herbs",
+    modelCode: "AG-104",
+
+    status: "active",
+
+    isTopProduct: false,
+    isBestSellerProduct: false,
+
+    mainImage: "/src/assets/images/product/wala-serenity.png",
+    images: ["/src/assets/images/product/wala-serenity.png"],
+
+    createdAt: "2026-01-01",
+    updatedAt: "2026-01-01",
+  },
+
+  {
+    id: "prod_7",
+    name: "Anant Chandan Agarbatti",
+    slug: "anant-chandan-agarbatti",
+
+    description:
+      "Classic sandalwood fragrance for spiritual rituals and relaxation.",
+
+    brand: "Geffron",
+    categoryId: "cat_1",
+
+    productType: "Incense Stick",
+
+    material: "Natural Herbs",
+    modelCode: "AG-105",
+
+    status: "active",
+
+    isTopProduct: true,
+    isBestSellerProduct: true,
+
+    mainImage: "/src/assets/images/product/anant-chandan.png",
+    images: ["/src/assets/images/product/anant-chandan.png"],
+
+    createdAt: "2026-01-01",
+    updatedAt: "2026-01-01",
+  },
+
+  {
+    id: "prod_8",
+    name: "Golden Crown Agarbatti",
+    slug: "golden-crown-agarbatti",
+
+    description:
+      "Premium incense sticks offering a royal and pleasant fragrance.",
+
+    brand: "Geffron",
+    categoryId: "cat_1",
+
+    productType: "Incense Stick",
+
+    material: "Natural Herbs",
+    modelCode: "AG-106",
+
+    status: "active",
+
+    isTopProduct: false,
+    isBestSellerProduct: true,
+
+    mainImage: "/src/assets/images/product/golden-crown.png",
+    images: ["/src/assets/images/product/golden-crown.png"],
+
+    createdAt: "2026-01-01",
+    updatedAt: "2026-01-01",
+  },
+
+  {
+    id: "prod_9",
+    name: "Harit Panadi Agarbatti",
+    slug: "harit-panadi-agarbatti",
+
+    description: "Natural herbal incense with a refreshing green fragrance.",
+
+    brand: "Geffron",
+    categoryId: "cat_1",
+
+    productType: "Incense Stick",
+
+    material: "Natural Herbs",
+    modelCode: "AG-107",
+
+    status: "active",
+
+    isTopProduct: false,
+    isBestSellerProduct: false,
+
+    mainImage: "/src/assets/images/product/harit-panadi.png",
+    images: ["/src/assets/images/product/harit-panadi.png"],
+
+    createdAt: "2026-01-01",
+    updatedAt: "2026-01-01",
+  },
+
+  {
+    id: "prod_10",
+    name: "Loban Aura Camphor Agarbatti",
+    slug: "loban-aura-camphor-agarbatti",
+
+    description:
+      "Premium Loban and Camphor incense for purification and devotion.",
+
+    brand: "Geffron",
+    categoryId: "cat_1",
+
+    productType: "Incense Stick",
+
+    material: "Natural Herbs",
+    modelCode: "AG-108",
+
+    status: "active",
+
+    isTopProduct: true,
+    isBestSellerProduct: true,
+
+    mainImage: "/src/assets/images/product/loban-aura-camphor.png",
+    images: ["/src/assets/images/product/loban-aura-camphor.png"],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
@@ -110,6 +310,10 @@ export const products = [
 ];
 
 export const productSpecs = [
+  // ===========================
+  // BAG PRODUCTS
+  // ===========================
+
   {
     productId: "prod_1",
 
@@ -128,21 +332,188 @@ export const productSpecs = [
   },
 
   {
+    productId: "prod_2",
+
+    dimensions: {
+      length: 38,
+      width: 30,
+      height: 8,
+    },
+
+    weightOptions: ["200gm", "500gm"],
+    count: 1,
+
+    packaging: "Eco-friendly folded packaging",
+
+    benefits: [
+      "Traditional Warli design",
+      "Reusable",
+      "Strong handles",
+      "Eco-friendly material",
+    ],
+  },
+
+  // ===========================
+  // AGARBATTI PRODUCTS
+  // ===========================
+
+  {
     productId: "prod_3",
 
     length: "9 inch",
     weightOptions: ["30gm", "60gm", "100gm"],
+
     burnTime: "45–60 min",
     diameter: "2.5 mm",
 
-    packaging: "Box pack",
+    packaging: "Premium Box Pack",
     count: 20,
 
     benefits: [
       "Long-lasting fragrance",
       "Low smoke",
       "Natural ingredients",
-      "Spiritual calm",
+      "Floral soothing aroma",
+    ],
+  },
+
+  {
+    productId: "prod_4",
+
+    length: "9 inch",
+    weightOptions: ["30gm", "60gm", "100gm"],
+
+    burnTime: "45–60 min",
+    diameter: "2.5 mm",
+
+    packaging: "Premium Box Pack",
+    count: 20,
+
+    benefits: [
+      "Divine fragrance",
+      "Ideal for prayer",
+      "Long-lasting aroma",
+      "Low smoke",
+    ],
+  },
+
+  {
+    productId: "prod_5",
+
+    length: "9 inch",
+    weightOptions: ["30gm", "60gm", "100gm"],
+
+    burnTime: "45–60 min",
+    diameter: "2.5 mm",
+
+    packaging: "Premium Box Pack",
+    count: 20,
+
+    benefits: [
+      "Luxury oudh fragrance",
+      "Premium aroma",
+      "Long burning time",
+      "Relaxing atmosphere",
+    ],
+  },
+
+  {
+    productId: "prod_6",
+
+    length: "9 inch",
+    weightOptions: ["30gm", "60gm", "100gm"],
+
+    burnTime: "45–60 min",
+    diameter: "2.5 mm",
+
+    packaging: "Premium Box Pack",
+    count: 20,
+
+    benefits: [
+      "Refreshing fragrance",
+      "Natural ingredients",
+      "Low smoke",
+      "Peaceful ambience",
+    ],
+  },
+
+  {
+    productId: "prod_7",
+
+    length: "9 inch",
+    weightOptions: ["30gm", "60gm", "100gm"],
+
+    burnTime: "45–60 min",
+    diameter: "2.5 mm",
+
+    packaging: "Premium Box Pack",
+    count: 20,
+
+    benefits: [
+      "Pure sandalwood fragrance",
+      "Spiritual relaxation",
+      "Long-lasting aroma",
+      "Natural ingredients",
+    ],
+  },
+
+  {
+    productId: "prod_8",
+
+    length: "9 inch",
+    weightOptions: ["30gm", "60gm", "100gm"],
+
+    burnTime: "45–60 min",
+    diameter: "2.5 mm",
+
+    packaging: "Premium Box Pack",
+    count: 20,
+
+    benefits: [
+      "Royal fragrance",
+      "Premium quality",
+      "Low smoke",
+      "Long-lasting freshness",
+    ],
+  },
+
+  {
+    productId: "prod_9",
+
+    length: "9 inch",
+    weightOptions: ["30gm", "60gm", "100gm"],
+
+    burnTime: "45–60 min",
+    diameter: "2.5 mm",
+
+    packaging: "Premium Box Pack",
+    count: 20,
+
+    benefits: [
+      "Herbal fragrance",
+      "Natural ingredients",
+      "Fresh aroma",
+      "Eco-friendly product",
+    ],
+  },
+
+  {
+    productId: "prod_10",
+
+    length: "9 inch",
+    weightOptions: ["30gm", "60gm", "100gm"],
+
+    burnTime: "45–60 min",
+    diameter: "2.5 mm",
+
+    packaging: "Premium Box Pack",
+    count: 20,
+
+    benefits: [
+      "Loban and camphor fragrance",
+      "Purifying aroma",
+      "Ideal for rituals",
+      "Long-lasting fragrance",
     ],
   },
 ];

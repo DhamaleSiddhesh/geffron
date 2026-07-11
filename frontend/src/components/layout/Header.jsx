@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/images/logos/geffron-logo.png";
+import logo from "../../assets/images/logos/main-logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -34,14 +34,14 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 flex justify-around items-center py-5 transition-all duration-300 ${
+      className={`sticky top-0 z-50 flex justify-around items-center py- transition-all duration-300 ${
         isSticky ? "bg-[#e7e7e9] shadow-md" : "bg-transparent"
       }`}
     >
       {/* Logo */}
       <Link to={"/"}>
         <div className="">
-          <img className="h-15 w-auto" src={logo} alt="geffron logo" />
+          <img className="h-30 w-auto" src={logo} alt="geffron logo" />
         </div>
       </Link>
       {/* nav */}

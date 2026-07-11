@@ -1,14 +1,16 @@
 import React from "react";
 import AnimatedButton from "./AnimatedButton";
 
-const ProductCard = ({product}) => {
+const ProductCard = ({ product }) => {
   return (
-    <div className="bg-white rounded-xl overflow-hidden  hover:shadow-lg transitio">
-      <img
-        className="w-full h-auto object-cover"
-        src={product.image}
-        alt={product.name}
-      />
+    <div className="flex flex-col bg-white rounded-xl overflow-hidden  hover:shadow-lg transitio">
+      <div className="w-full h-100 bg-gray-100 overflow-hidden">
+        <img
+          className="w-full h-full object-cover p-4 hover:scale-105 transition duration-300"
+          src={product.mainImage}
+          alt={product.name}
+        />
+      </div>
 
       <div className="p-4 text-center">
         <h3 className="text-xl font-semibold">{product.name}</h3>
@@ -17,7 +19,7 @@ const ProductCard = ({product}) => {
           {product.desicription}
         </p>
 
-        <AnimatedButton title="Explore" link={"/product"}/>
+        <AnimatedButton title="Explore" link={"/product"} />
       </div>
     </div>
   );

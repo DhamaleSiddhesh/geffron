@@ -1,88 +1,39 @@
 import React, { useState } from "react";
 import TabButton from "../common/TabButton";
 import ProductCard from "../common/ProductCard";
-import juteProduct from "../../assets/images/product/jute-product.webp";
-import agarbattiProduct from "../../assets/images/product/agarbatti-product.webp";
 
-const products = [
-  {
-    id: 1,
-    image: juteProduct,
-    name: "Bag Large",
-    desicription:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Bags",
-  },
-  {
-    id: 2,
-    image: juteProduct,
-    name: "Bag Small",
-    desicription:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Bags",
-  },
-  {
-    id: 3,
-    image: juteProduct,
-    name: "Bag Large",
-    desicription:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Bags",
-  },
-  {
-    id: 4,
-    image: juteProduct,
-    name: "Bag Small",
-    desicription:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Bags",
-  },
-  {
-    id: 5,
-    image: juteProduct,
-    name: "Bag Large",
-    desicription:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Bags",
-  },
-  {
-    id: 6,
-    image: juteProduct,
-    name: "Bag Small",
-    desicription:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Bags",
-  },
-  {
-    id: 7,
-    image: agarbattiProduct,
-    name: "Agarbatti Lavender",
-    desicription:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Agarbatti",
-  },
-  {
-    id: 8,
-    image: agarbattiProduct,
-    name: "Agarbatti Sandalwood",
-    desicription:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis enim soluta rem reiciendis amet est.",
-    category: "Agarbatti",
-  },
-];
+import { products } from "../../data/database";
 
 const AllProducts = () => {
   const [activeTab, setActiveTab] = useState("ALL");
 
-  const categories = ["ALL","Agarbatti","Bags"];
+  const categories = [
+    "ALL",
+    "Agarbatti",
+    "Bags",
+  ];
+
 
   const filteredProducts =
     activeTab === "ALL"
       ? products
-      : products.filter((p) => p.category === activeTab);
+      : products.filter((product) => {
+          
+          if (activeTab === "Agarbatti") {
+            return product.categoryId === "cat_1";
+          }
+
+          if (activeTab === "Bags") {
+            return product.categoryId === "cat_2";
+          }
+
+          return false;
+        });
+
 
   return (
     <section className="py-10">
+
       {/* Tabs */}
       <div className="flex justify-center gap-6 mb-10 flex-wrap">
         {categories.map((category) => (
@@ -95,12 +46,29 @@ const AllProducts = () => {
         ))}
       </div>
 
+
       {/* Products Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-6 max-w-6xl mx-auto">
-        {filteredProducts.map((prod) => (
-          <ProductCard key={prod.id} product={prod} />
-        ))}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 max-w-7xl mx-auto">
+
+        {filteredProducts.length > 0 ? (
+
+          filteredProducts.map((product) => (
+            <ProductCard
+              key={product.id}
+              product={product}
+            />
+          ))
+
+        ) : (
+
+          <div className="col-span-full text-center py-10 text-gray-500">
+            No products available.
+          </div>
+
+        )}
+
       </div>
+
     </section>
   );
 };

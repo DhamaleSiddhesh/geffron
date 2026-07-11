@@ -14,6 +14,8 @@ import {
 } from "swiper/modules";
 
 import hero from "../../assets/images/hero/home-hero.webp";
+import bagImage from "../../assets/images/hero/bag.jpeg"
+import agarbattiImage from "../../assets/images/hero/agarbatti.jpeg"
 import OutlinedButton from "../common/OutlinedButton";
 
 const slides = [
@@ -21,13 +23,13 @@ const slides = [
     title: "Agarbatti Products",
     description:
       "This is a glassmorphism card with some content and a button below. Looks modern and clean!",
-    image: hero,
+    image: agarbattiImage,
   },
   {
     title: "Bag Products",
     description:
       "This is a glassmorphism card with some content and a button below. Looks modern and clean!",
-    image: hero,
+    image: bagImage,
   },
 ];
 
@@ -62,7 +64,7 @@ const SliderHero = () => {
             />
 
             <div className="absolute inset-0 flex justify-center items-center text-center text-white">
-              <div className="bg-white/10 backdrop-blur-sm border border-white rounded-xl p-6 md:p-10 max-w-xl shadow-lg">
+              <div className="bg-white/10 backdrop-blur-xs border border-white rounded-xl p-6 md:p-10 max-w-xl shadow-lg">
                 <h2 className="uppercase font-serif text-3xl md:text-6xl font-light mb-4 text-black tracking-widest">
                   {slide.title}
                 </h2>

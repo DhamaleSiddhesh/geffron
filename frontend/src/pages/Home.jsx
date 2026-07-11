@@ -12,16 +12,16 @@ const Home = () => {
     <div>
       <SliderHero />
       <div className="py-15">
-        <AboutSection />
-      </div>
-      <div className="py-15">
         <Categories />
+      </div>
+      <div className="pt-15">
+        <AboutSection />
       </div>
       <div className="py-15">
         <WhyChooseGeffron />
       </div>
       <div className="py-15">
-        <TopProducts title={"Best seller products"}/>
+        <TopProducts title={"Best seller products"} bestSeller />
       </div>
       <InquirySection />
       <Standards />
