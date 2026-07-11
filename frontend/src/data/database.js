@@ -1,3 +1,14 @@
+import juteProduct from "../assets/images/product/jute-product.webp";
+
+import mogaraEssence from "../assets/images/product/mogara-essence.png";
+import namoNamah from "../assets/images/product/namo-namah.png";
+import oudhSwarna from "../assets/images/product/oudh-swarna.png";
+import walaSerenity from "../assets/images/product/wala-serenity.png";
+import anantChandan from "../assets/images/product/anant-chandan.png";
+import goldenCrown from "../assets/images/product/golden-crown.png";
+import haritPanadi from "../assets/images/product/harit-panadi.png";
+import lobanAuraCamphor from "../assets/images/product/loban-aura-camphor.png";
+
 export const categories = [
   {
     id: "cat_1",
@@ -44,12 +55,9 @@ export const products = [
     isTopProduct: true,
     isBestSellerProduct: true,
 
-    mainImage: "/src/assets/images/product/jute-product.webp",
-    images: [
-      "/src/assets/images/product/jute-product.webp",
-      "/src/assets/images/product/jute-product.webp",
-      "/src/assets/images/product/jute-product.webp",
-    ],
+    mainImage: juteProduct,
+
+    images: [juteProduct, juteProduct, juteProduct],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
@@ -76,8 +84,9 @@ export const products = [
     isTopProduct: false,
     isBestSellerProduct: false,
 
-    mainImage: "/src/assets/images/product/jute-product.webp",
-    images: ["/src/assets/images/product/jute-product.webp", "/src/assets/images/product/jute-product.webp"],
+    mainImage: juteProduct,
+
+    images: [juteProduct, juteProduct],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
@@ -89,6 +98,7 @@ export const products = [
 
   {
     id: "prod_3",
+
     name: "Mogara Essence Agarbatti",
     slug: "mogara-essence-agarbatti",
 
@@ -96,11 +106,13 @@ export const products = [
       "Premium Mogara fragrance incense sticks with a soothing floral aroma.",
 
     brand: "Geffron",
+
     categoryId: "cat_1",
 
     productType: "Incense Stick",
 
     material: "Natural Herbs",
+
     modelCode: "AG-101",
 
     status: "active",
@@ -108,8 +120,9 @@ export const products = [
     isTopProduct: true,
     isBestSellerProduct: true,
 
-    mainImage: "/src/assets/images/product/mogara-essence.png",
-    images: ["/src/assets/images/product/mogara-essence.png"],
+    mainImage: mogaraEssence,
+
+    images: [mogaraEssence],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
@@ -117,17 +130,20 @@ export const products = [
 
   {
     id: "prod_4",
+
     name: "Namo Namah Agarbatti",
     slug: "namo-namah-agarbatti",
 
     description: "Divine fragrance crafted for daily prayers and meditation.",
 
     brand: "Geffron",
+
     categoryId: "cat_1",
 
     productType: "Incense Stick",
 
     material: "Natural Herbs",
+
     modelCode: "AG-102",
 
     status: "active",
@@ -135,8 +151,9 @@ export const products = [
     isTopProduct: true,
     isBestSellerProduct: false,
 
-    mainImage: "/src/assets/images/product/namo-namah.png",
-    images: ["/src/assets/images/product/namo-namah.png"],
+    mainImage: namoNamah,
+
+    images: [namoNamah],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
@@ -144,17 +161,20 @@ export const products = [
 
   {
     id: "prod_5",
+
     name: "Oudh Swarna Agarbatti",
     slug: "oudh-swarna-agarbatti",
 
     description: "Rich oudh fragrance with a luxurious and long-lasting aroma.",
 
     brand: "Geffron",
+
     categoryId: "cat_1",
 
     productType: "Incense Stick",
 
     material: "Natural Herbs",
+
     modelCode: "AG-103",
 
     status: "active",
@@ -162,8 +182,9 @@ export const products = [
     isTopProduct: false,
     isBestSellerProduct: true,
 
-    mainImage: "/src/assets/images/product/oudh-swarna.png",
-    images: ["/src/assets/images/product/oudh-swarna.png"],
+    mainImage: oudhSwarna,
+
+    images: [oudhSwarna],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
@@ -171,6 +192,7 @@ export const products = [
 
   {
     id: "prod_6",
+
     name: "Wala Serenity Agarbatti",
     slug: "wala-serenity-agarbatti",
 
@@ -178,11 +200,13 @@ export const products = [
       "Refreshing herbal fragrance that creates a peaceful ambience.",
 
     brand: "Geffron",
+
     categoryId: "cat_1",
 
     productType: "Incense Stick",
 
     material: "Natural Herbs",
+
     modelCode: "AG-104",
 
     status: "active",
@@ -190,8 +214,9 @@ export const products = [
     isTopProduct: false,
     isBestSellerProduct: false,
 
-    mainImage: "/src/assets/images/product/wala-serenity.png",
-    images: ["/src/assets/images/product/wala-serenity.png"],
+    mainImage: walaSerenity,
+
+    images: [walaSerenity],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
@@ -199,6 +224,7 @@ export const products = [
 
   {
     id: "prod_7",
+
     name: "Anant Chandan Agarbatti",
     slug: "anant-chandan-agarbatti",
 
@@ -206,11 +232,13 @@ export const products = [
       "Classic sandalwood fragrance for spiritual rituals and relaxation.",
 
     brand: "Geffron",
+
     categoryId: "cat_1",
 
     productType: "Incense Stick",
 
     material: "Natural Herbs",
+
     modelCode: "AG-105",
 
     status: "active",
@@ -218,8 +246,9 @@ export const products = [
     isTopProduct: true,
     isBestSellerProduct: true,
 
-    mainImage: "/src/assets/images/product/anant-chandan.png",
-    images: ["/src/assets/images/product/anant-chandan.png"],
+    mainImage: anantChandan,
+
+    images: [anantChandan],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
@@ -227,6 +256,7 @@ export const products = [
 
   {
     id: "prod_8",
+
     name: "Golden Crown Agarbatti",
     slug: "golden-crown-agarbatti",
 
@@ -234,11 +264,13 @@ export const products = [
       "Premium incense sticks offering a royal and pleasant fragrance.",
 
     brand: "Geffron",
+
     categoryId: "cat_1",
 
     productType: "Incense Stick",
 
     material: "Natural Herbs",
+
     modelCode: "AG-106",
 
     status: "active",
@@ -246,8 +278,9 @@ export const products = [
     isTopProduct: false,
     isBestSellerProduct: true,
 
-    mainImage: "/src/assets/images/product/golden-crown.png",
-    images: ["/src/assets/images/product/golden-crown.png"],
+    mainImage: goldenCrown,
+
+    images: [goldenCrown],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
@@ -255,17 +288,20 @@ export const products = [
 
   {
     id: "prod_9",
+
     name: "Harit Panadi Agarbatti",
     slug: "harit-panadi-agarbatti",
 
     description: "Natural herbal incense with a refreshing green fragrance.",
 
     brand: "Geffron",
+
     categoryId: "cat_1",
 
     productType: "Incense Stick",
 
     material: "Natural Herbs",
+
     modelCode: "AG-107",
 
     status: "active",
@@ -273,8 +309,9 @@ export const products = [
     isTopProduct: false,
     isBestSellerProduct: false,
 
-    mainImage: "/src/assets/images/product/harit-panadi.png",
-    images: ["/src/assets/images/product/harit-panadi.png"],
+    mainImage: haritPanadi,
+
+    images: [haritPanadi],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
@@ -282,6 +319,7 @@ export const products = [
 
   {
     id: "prod_10",
+
     name: "Loban Aura Camphor Agarbatti",
     slug: "loban-aura-camphor-agarbatti",
 
@@ -289,11 +327,13 @@ export const products = [
       "Premium Loban and Camphor incense for purification and devotion.",
 
     brand: "Geffron",
+
     categoryId: "cat_1",
 
     productType: "Incense Stick",
 
     material: "Natural Herbs",
+
     modelCode: "AG-108",
 
     status: "active",
@@ -301,8 +341,9 @@ export const products = [
     isTopProduct: true,
     isBestSellerProduct: true,
 
-    mainImage: "/src/assets/images/product/loban-aura-camphor.png",
-    images: ["/src/assets/images/product/loban-aura-camphor.png"],
+    mainImage: lobanAuraCamphor,
+
+    images: [lobanAuraCamphor],
 
     createdAt: "2026-01-01",
     updatedAt: "2026-01-01",
