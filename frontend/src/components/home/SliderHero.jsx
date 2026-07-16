@@ -64,12 +64,14 @@ const SliderHero = () => {
             />
 
             <div className="absolute inset-0 flex justify-start items-center text-center text-white">
-              <div className="bg-white/10 backdrop-blur-[0.5px] border border-gray-400 rounded-xl m-5 md:p-6 max-w-xl">
-                <h2 className="uppercase font-serif text-3xl md:text-6xl font-light mb-4 text-black tracking-widest">
+              <div className="absolute inset-y-0 left-0 w-[50%] bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
+
+              <div className="z-10 m-5 md:p-6 max-w-xl">
+                <h2 className="uppercase font-serif text-3xl md:text-6xl font-light mb-4 text-white tracking-widest">
                   {slide.title}
                 </h2>
 
-                <p className="text-black/80 mb-6 text-sm md:text-base">
+                <p className="text-white mb-6 text-sm md:text-base">
                   {slide.description}
                 </p>
 
