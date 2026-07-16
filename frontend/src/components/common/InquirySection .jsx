@@ -8,7 +8,7 @@ const InquirySection = () => {
       style={{ backgroundImage: `url(${ctaImage})` }}
     >
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/10"></div>
 
       <div className="relative max-w-screen-xl mx-auto px-6 flex flex-col lg:flex-row gap-10 items-center z-10">
         {/* LEFT CONTENT */}

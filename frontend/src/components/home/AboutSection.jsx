@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <div className="text-center">
       <BrandHeading />
-      <h1 className="text-8xl uppercase font-extralight">About Us </h1>
+      <h1 className="text-8xl uppercase font-extralight pt-5">About Us </h1>
       <span className="block max-w-lg mx-auto mt-4">
         The name Geffron represents growth, fragrance, strength, and spiritual
         harmony. It is a unique brand identity created to symbolize reliability,

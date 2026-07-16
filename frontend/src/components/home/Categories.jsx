@@ -21,7 +21,7 @@ const Categories = () => {
     },
   ];
   return (
-    <div className="space-y-15">
+    <div className="space-y-10">
       {/* <h1 className="text-center text-4xl tracking-widest bg-white/40 p-3 flex justify-center uppercase font-[200]">Our Products</h1> */}
       <SectionHeading title="Our Collection" />
       {categoriesData.map((category, index) => (
@@ -36,7 +36,7 @@ const Categories = () => {
             <img
               src={category.image}
               alt={category.title}
-              className="w-100 h-125 rounded-4xl"
+              className="w-100 h-120 rounded-4xl"
             />
           </div>
 

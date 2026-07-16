@@ -123,12 +123,12 @@ const TopProducts = ({
       </div>
 
       {/* Products */}
-      <div className="mx-auto max-w-7xl px-4">
+      <div className="container mx-auto px-10">
         {filteredProducts.length > 0 ? (
           <Swiper
-            modules={[Navigation, Pagination, Autoplay, Keyboard]}
+            modules={[Navigation, Pagination, Autoplay, Keyboard ,]}
             slidesPerView={4}
-            spaceBetween={20}
+            spaceBetween={10}
             loop={false}
             navigation
             pagination={{
@@ -136,7 +136,8 @@ const TopProducts = ({
             }}
             autoplay={{
               delay: 2500,
-              disableOnInteraction: false,
+              disableOnInteraction: true,
+              pauseOnMouseEnter:true
             }}
             keyboard={{
               enabled: true,
