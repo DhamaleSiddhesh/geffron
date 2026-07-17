@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import ContactUs from "./pages/ContactUs";
 import ProductDetail from "./pages/SingleProduct";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <div className="bg-[#e7e7e9]">
         <Layout>
           <div className="min-h-screen ">
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
