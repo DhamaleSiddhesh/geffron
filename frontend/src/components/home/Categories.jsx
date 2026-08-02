@@ -42,7 +42,7 @@ const Categories = () => {
 
           {/* Content */}
           <div className="text-center max-w-xl">
-            <h1 className="text-6xl uppercase font-normal tracking-[0.4em]">
+            <h1 className="text-6xl uppercase font-normal tracking-widest">
               {category.title}
             </h1>
 

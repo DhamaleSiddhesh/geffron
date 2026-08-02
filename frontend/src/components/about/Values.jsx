@@ -35,7 +35,7 @@ const Values = () => {
               <img
                 src={why_choose_us}
                 alt="Our Values"
-                className="h-120 w-auto"
+                className="h-120 w-auto border-2 border-white shadow-2xl rounded-2xl"
               />
             </div>
 

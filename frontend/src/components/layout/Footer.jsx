@@ -1,81 +1,114 @@
 import React from "react";
 import footerLogo from "../../assets/images/logos/footer-logo.png";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black/80 text-white mt-0 border-t">
+    <footer className="bg-black/80 text-white border-t">
       <div className="max-w-screen-xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          {/* <h2 className="text-2xl font-bold tracking-widest">GEFFRON</h2>
-          <p className="text-white mt-4 text-sm">
-            Eco-friendly products crafted for a sustainable future.
-          </p> */}
-          <img src={footerLogo} alt="footer logo" className="w-auto h-35"/>
+          <img
+            src={footerLogo}
+            alt="Geffron Logo"
+            className="h-32 w-auto"
+          />
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-white ">
-            <li className="hover:text-[#B32922] cursor-pointer">Home</li>
-            <li className="hover:text-[#B32922] cursor-pointer">About Us</li>
-            <li className="hover:text-[#B32922] cursor-pointer">Products</li>
-            <li className="hover:text-[#B32922] cursor-pointer">Contact</li>
+          <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+          <ul className="space-y-3">
+            <li className="hover:text-[#B32922] transition-colors cursor-pointer">
+              Home
+            </li>
+            <li className="hover:text-[#B32922] transition-colors cursor-pointer">
+              About Us
+            </li>
+            <li className="hover:text-[#B32922] transition-colors cursor-pointer">
+              Products
+            </li>
+            <li className="hover:text-[#B32922] transition-colors cursor-pointer">
+              Contact
+            </li>
           </ul>
         </div>
 
         {/* Products */}
         <div>
-          <h3 className="font-semibold mb-4">Products</h3>
-          <ul className="space-y-2 text-white ">
-            <li className="hover:text-[#B32922] cursor-pointer">Bags</li>
-            <li className="hover:text-[#B32922] cursor-pointer">Agarbatti</li>
+          <h3 className="font-semibold text-lg mb-4">Products</h3>
+          <ul className="space-y-3">
+            <li className="hover:text-[#B32922] transition-colors cursor-pointer">
+              Bags
+            </li>
+            <li className="hover:text-[#B32922] transition-colors cursor-pointer">
+              Agarbatti
+            </li>
           </ul>
         </div>
 
-        {/* Contact + Social */}
+        {/* Contact */}
         <div>
-          <h3 className="font-semibold mb-4">Contact</h3>
+          <h3 className="font-semibold text-lg mb-4">Contact</h3>
 
-          <p className="text-white ">📞 +91 98765 43210</p>
-          <p className="text-white mt-1">✉ info@geffron.com</p>
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <FaPhoneAlt className="text-white text-sm" />
+              <p>+91 98765 43210</p>
+            </div>
 
-          {/* Social Initial Icons */}
-          <div className="flex gap-3 mt-5">
+            <div className="flex items-center gap-3">
+              <FaEnvelope className="text-white text-sm" />
+              <p>info@geffron.com</p>
+            </div>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex gap-4 mt-6">
             <a
               href="#"
-              className="text-black w-9 h-9 flex items-center justify-center rounded-full bg-white shadow text-sm font-semibold hover:bg-blue-600 hover:text-white transition"
+              aria-label="Facebook"
+              className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-[#1877F2] hover:border-[#1877F2] transition-all duration-300"
             >
-              FB
+              <FaFacebookF className="text-white" />
             </a>
 
             <a
               href="#"
-              className="text-black w-9 h-9 flex items-center justify-center rounded-full bg-white shadow text-sm font-semibold hover:bg-pink-500 hover:text-white transition"
+              aria-label="Instagram"
+              className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-[#E4405F] hover:border-[#E4405F] transition-all duration-300"
             >
-              IG
+              <FaInstagram className="text-white" />
             </a>
 
             <a
               href="#"
-              className="text-black w-9 h-9 flex items-center justify-center rounded-full bg-white shadow text-sm font-semibold hover:bg-red-500 hover:text-white transition"
+              aria-label="YouTube"
+              className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-[#FF0000] hover:border-[#FF0000] transition-all duration-300"
             >
-              YT
+              <FaYoutube className="text-white" />
             </a>
 
             <a
               href="#"
-              className="text-black w-9 h-9 flex items-center justify-center rounded-full bg-white shadow text-sm font-semibold hover:bg-blue-500 hover:text-white transition"
+              aria-label="LinkedIn"
+              className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all duration-300"
             >
-              LI
+              <FaLinkedinIn className="text-white" />
             </a>
           </div>
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="text-center py-5 border-t text-gray-500 text-sm">
+      <div className="border-t border-white/20 py-5 text-center text-sm text-gray-400">
         © {new Date().getFullYear()} Geffron. All rights reserved.
       </div>
     </footer>
