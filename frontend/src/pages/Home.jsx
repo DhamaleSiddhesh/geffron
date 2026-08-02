@@ -9,23 +9,13 @@ import Standards from "../components/common/Standards";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden space-y-8 sm:space-y-8 md:space-y-10">
       <SliderHero />
-      <div className="py-15">
-        <Categories />
-      </div>
-      {/* <div className="pt-15"> */}
+      <Categories />
       <AboutSection />
-      {/* </div> */}
-      <div className="py-15">
-        <WhyChooseGeffron />
-      </div>
-      {/* <div className="py-15"> */}
+      <WhyChooseGeffron />
       <TopProducts title={"Best seller products"} bestSeller />
-      {/* </div> */}
-      <div className="pt-10">
-        <InquirySection />
-      </div>
+      <InquirySection />
       <Standards />
     </div>
   );

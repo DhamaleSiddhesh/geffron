@@ -37,7 +37,7 @@ const SliderHero = () => {
   const isSingleSlide = slides.length === 1;
 
   return (
-    <div className="px-4 md:px-12">
+    <div className="px-2 sm:px-6 md:px-12">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, Keyboard, EffectFade]}
         speed={3000}
@@ -53,25 +53,25 @@ const SliderHero = () => {
           isSingleSlide ? false : { delay: 3000, disableOnInteraction: true }
         }
         keyboard={!isSingleSlide}
-        className="rounded-[30px] overflow-hidden"
+        className="rounded-[20px] sm:rounded-[30px] overflow-hidden"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className="relative">
             <img
-              className="h-[70vh] md:h-[85vh] w-full object-cover"
+              className="h-[55vh] sm:h-[70vh] md:h-[85vh] w-full object-cover"
               src={slide.image}
               alt={slide.title}
             />
 
-            <div className="absolute inset-0 flex justify-start items-center text-center text-white">
-              <div className="absolute inset-y-0 left-0 w-[60%] bg-gradient-to-r from-black/75 via-black/40 to-transparent" />
+            <div className="absolute inset-0 flex justify-start items-center text-white">
+              <div className="absolute inset-y-0 left-0 w-full md:w-[65%] bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
 
-              <div className="z-10 m-5 md:p-6 max-w-xl">
-                <h2 className="uppercase font-serif text-3xl md:text-6xl font-light mb-4 text-white tracking-widest">
+              <div className="z-10 p-5 sm:p-8 md:p-12 max-w-xl text-left">
+                <h2 className="uppercase font-serif text-2xl sm:text-4xl md:text-6xl font-light mb-3 sm:mb-4 text-white tracking-wider sm:tracking-widest">
                   {slide.title}
                 </h2>
 
-                <p className="text-white mb-6 text-sm md:text-base md:max-w-sm mx-auto">
+                <p className="text-white/90 mb-6 text-xs sm:text-sm md:text-base max-w-xs sm:max-w-sm">
                   {slide.description}
                 </p>
 

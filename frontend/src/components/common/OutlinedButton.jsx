@@ -9,9 +9,9 @@ const OutlinedButton = (props) => {
     link = "",
   } = props;
   return (
-    <Link to={link}>
+    <Link to={link} className="inline-block">
       <button
-        className={`${bgColor} ${textColor} px-6 py-2 rounded-full backdrop-blur-sm relative overflow-hidden h-10 cursor-pointer group`}
+        className={`${bgColor} ${textColor} px-6 py-2.5 rounded-full backdrop-blur-sm relative overflow-hidden h-11 min-h-[44px] cursor-pointer group font-medium text-xs sm:text-sm tracking-wider`}
       >
         {/* First span: current text */}
         <span className="uppercase block transition-transform duration-300 ease-in-out group-hover:-translate-y-10">

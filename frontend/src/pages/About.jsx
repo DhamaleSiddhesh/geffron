@@ -13,22 +13,15 @@ import TopProducts from "../components/home/TopProducts";
 
 const About = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden space-y-4">
       <SliderHero />
       <BrandHeading />
       <WelcomeSection />
-      {/* <div className="md:py-15"> */}
       <GeffronMeaning />
-      {/* </div> */}
       <VisionMission />
       <Values />
-      {/* <WhyChooseGeffron /> */}
-      <div className="pt-15">
-        <TopProducts />
-      </div>
-      <div className="pt-15">
-        <InquirySection />
-      </div>
+      <TopProducts />
+      <InquirySection />
       <Standards />
     </div>
   );

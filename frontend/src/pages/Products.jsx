@@ -7,7 +7,7 @@ import Standards from "../components/common/Standards";
 
 const Products = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden space-y-8 sm:space-y-14 md:space-y-16">
       <SliderHero />
       <ProductIntro />
       <AllProducts />

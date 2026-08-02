@@ -6,14 +6,12 @@ import TopProducts from "../components/home/TopProducts";
 
 const SingleProduct = () => {
   return (
-    <>
+    <div className="overflow-x-hidden space-y-4">
       <ProductDetail />
-      <div className="py-15">
-        <TopProducts />
-      </div>
+      <TopProducts />
       <InquirySection />
       <Standards />
-    </>
+    </div>
   );
 };
 

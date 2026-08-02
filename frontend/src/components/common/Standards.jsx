@@ -6,28 +6,29 @@ import makeInIndia from "../../assets/icons/make-in-india.png";
 
 const Standards = () => {
   return (
-    <div className="p-5 bg-white">
-      <ul className="flex gap-10 md:gap-20 justify-center list-disc items-center text-2xl font-semibold">
-        <li className="uppercase ">Natural</li>
-        <li className="uppercase ">Hygienic</li>
-        <li className="uppercase ">Eco Friendly</li>
+    <div className="px-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
+      <ul className="flex flex-wrap gap-4 sm:gap-10 md:gap-20 justify-center list-inside list-disc items-center text-sm sm:text-lg md:text-2xl font-semibold text-gray-800">
+        <li className="uppercase">Natural</li>
+        <li className="uppercase">Hygienic</li>
+        <li className="uppercase">Eco Friendly</li>
       </ul>
-      <div className="flex justify-center gap-15 pt-10">
-        <div className="flex flex-col items-center border rounded-2xl p-2">
-          <img className="w-auto h-20" src={animal} alt="" />
-          <p className="p-2 font-semibold">Not Tested On Animals</p>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-6 sm:pt-10 max-w-5xl mx-auto">
+        <div className="flex flex-col items-center border border-gray-200 rounded-2xl p-3 sm:p-4 text-center bg-gray-50/50 hover:shadow-sm transition">
+          <img className="w-auto h-14 sm:h-18 md:h-20 object-contain" src={animal} alt="Not tested on animals" />
+          <p className="p-2 font-semibold text-xs sm:text-sm md:text-base text-gray-800">Not Tested On Animals</p>
         </div>
-        <div className="flex flex-col items-center border rounded-2xl p-2">
-          <img className="w-auto h-20" src={child} alt="" />
-          <p className="p-2 font-semibold capitalize">Child labour Free</p>
+        <div className="flex flex-col items-center border border-gray-200 rounded-2xl p-3 sm:p-4 text-center bg-gray-50/50 hover:shadow-sm transition">
+          <img className="w-auto h-14 sm:h-18 md:h-20 object-contain" src={child} alt="Child labour free" />
+          <p className="p-2 font-semibold text-xs sm:text-sm md:text-base capitalize text-gray-800">Child Labour Free</p>
         </div>
-        <div className="flex flex-col items-center border rounded-2xl p-2">
-          <img className="w-auto h-20" src={greenClean} alt="" />
-          <p className="p-2 font-semibold capitalize">Clean & Green</p>
+        <div className="flex flex-col items-center border border-gray-200 rounded-2xl p-3 sm:p-4 text-center bg-gray-50/50 hover:shadow-sm transition">
+          <img className="w-auto h-14 sm:h-18 md:h-20 object-contain" src={greenClean} alt="Clean and green" />
+          <p className="p-2 font-semibold text-xs sm:text-sm md:text-base capitalize text-gray-800">Clean & Green</p>
         </div>
-        <div className="flex flex-col items-center border rounded-2xl p-2">
-          <img className="w-auto h-20" src={makeInIndia} alt="" />
-          <p className="p-2 font-semibold capitalize">Make in india</p>
+        <div className="flex flex-col items-center border border-gray-200 rounded-2xl p-3 sm:p-4 text-center bg-gray-50/50 hover:shadow-sm transition">
+          <img className="w-auto h-14 sm:h-18 md:h-20 object-contain" src={makeInIndia} alt="Make in India" />
+          <p className="p-2 font-semibold text-xs sm:text-sm md:text-base capitalize text-gray-800">Make In India</p>
         </div>
       </div>
     </div>

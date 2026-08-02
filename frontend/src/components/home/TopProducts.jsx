@@ -111,7 +111,7 @@ const TopProducts = ({
       <SectionHeading title={title} />
 
       {/* Tabs */}
-      <div className="flex justify-center gap-5 py-10">
+      <div className="flex justify-center items-center gap-1.5 sm:gap-5 py-4 sm:py-10 px-1 flex-nowrap sm:flex-wrap">
         {categories.map((category) => (
           <TabButton
             key={category}
@@ -123,21 +123,21 @@ const TopProducts = ({
       </div>
 
       {/* Products */}
-      <div className="container mx-auto px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         {filteredProducts.length > 0 ? (
           <Swiper
-            modules={[Navigation, Pagination, Autoplay, Keyboard ,]}
+            modules={[Navigation, Pagination, Autoplay, Keyboard]}
             slidesPerView={4}
-            spaceBetween={10}
+            spaceBetween={16}
             loop={false}
             navigation
             pagination={{
               clickable: true,
             }}
             autoplay={{
-              delay: 2500,
+              delay: 3000,
               disableOnInteraction: true,
-              pauseOnMouseEnter:true
+              pauseOnMouseEnter: true,
             }}
             keyboard={{
               enabled: true,
@@ -145,25 +145,22 @@ const TopProducts = ({
             breakpoints={{
               320: {
                 slidesPerView: 1,
-                spaceBetween: 10,
+                spaceBetween: 12,
               },
-
               640: {
                 slidesPerView: 2,
-                spaceBetween: 15,
+                spaceBetween: 16,
               },
-
-              1024: {
+              768: {
                 slidesPerView: 3,
                 spaceBetween: 20,
               },
-
-              1280: {
+              1024: {
                 slidesPerView: 4,
-                spaceBetween: 20,
+                spaceBetween: 24,
               },
             }}
-            className="topProductSlider"
+            className="topProductSlider pb-12"
           >
             {filteredProducts.map((product) => (
               <SwiperSlide key={product.id}>
