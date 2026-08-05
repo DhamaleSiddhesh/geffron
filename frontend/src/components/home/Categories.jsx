@@ -1,5 +1,6 @@
 import React from "react";
-import CategoryImage from "../../assets/images/product/categoryImage.webp";
+import CategoryImageA from "../../assets/images/product/agarbatti-cat.jpeg";
+import CategoryImageB from "../../assets/images/product/bag-cat.jpeg";
 import OutlinedButton from "../common/OutlinedButton";
 import SectionHeading from "../common/SectionHeading";
 
@@ -10,14 +11,14 @@ const Categories = () => {
       title: "Agarbatti",
       description:
         "Handcrafted premium incense sticks made with natural formulations to bring peace, fragrance, and positive energy to every environment.",
-      image: CategoryImage,
+      image: CategoryImageA,
     },
     {
       id: 2,
       title: "Bags",
       description:
         "Durable, stylish, and high-quality packaging and utility bags engineered for retail, industrial, and everyday consumer requirements.",
-      image: CategoryImage,
+      image: CategoryImageB,
     },
   ];
 
