@@ -30,7 +30,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h3 className="font-semibold text-base sm:text-lg mb-4 text-[#B32922] uppercase tracking-wider">
+          <h3 className="font-semibold text-base sm:text-lg mb-4 text-white uppercase tracking-wider">
             Quick Links
           </h3>
           <ul className="space-y-2">
@@ -71,7 +71,7 @@ const Footer = () => {
 
         {/* Products */}
         <div>
-          <h3 className="font-semibold text-base sm:text-lg mb-4 text-[#B32922] uppercase tracking-wider">
+          <h3 className="font-semibold text-base sm:text-lg mb-4 text-white uppercase tracking-wider">
             Products
           </h3>
           <ul className="space-y-2">
@@ -96,7 +96,7 @@ const Footer = () => {
 
         {/* Contact */}
         <div>
-          <h3 className="font-semibold text-base sm:text-lg mb-4 text-[#B32922] uppercase tracking-wider">
+          <h3 className="font-semibold text-base sm:text-lg mb-4 text-white uppercase tracking-wider">
             Contact Us
           </h3>
 
